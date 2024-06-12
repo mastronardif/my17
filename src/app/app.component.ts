@@ -6,10 +6,11 @@ import { StateService } from './services/state/state.service';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { increment, decrement, reset } from './store/actions/counter.actions';
+import { MystoreDirective } from './mydirectives/mystore.directive';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, ThestoreComponent],
+  imports: [RouterOutlet, CommonModule, ThestoreComponent, MystoreDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
